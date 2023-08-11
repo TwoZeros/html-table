@@ -10,8 +10,12 @@
   border-collapse: collapse;
   border-spacing: 4px;
   border: 2px solid black;
-}
 
+}
+th {
+    color:red;
+    background: silver;
+}
 td {
   padding: 5px;
   padding-right: 30px;
@@ -30,14 +34,20 @@ caption {
 
 .pink {
   background-color: pink;
+}
+.vertical-align-bottom {
+    vertical-align: bottom;
 } 
+.text-align-left{
+    text-align: left;
+}
     </style>
 </head>
   <body>
     <table>
       <caption>Распределение браузеров</caption>
       <tr>
-        <th rowspan="2">Браузер</th>
+        <th class="vertical-align-bottom text-align-center" rowspan="2">Браузер</th>
         <th colspan="2">Посещения</th>
       </tr>
       <tr>
@@ -50,7 +60,7 @@ caption {
         <td>59%</td>
       </tr>
       <tr>
-        <td rowspan="2">Google Chrome</td>
+        <td class="vertical-align-bottom text-align-left" rowspan="2">Google Chrome</td>
         <td>78</td>
         <td>28%</td>
       </tr>
